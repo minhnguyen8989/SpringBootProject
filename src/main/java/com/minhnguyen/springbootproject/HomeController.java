@@ -5,10 +5,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
-    @RequestMapping("/")
 
+    @RequestMapping("/")
     public String index() {
-        return "index.html";
+        return "index";
     }
 
+    @RequestMapping("/contact")
+    public String contact() {
+        return "contact";
+    }
+
+    @RequestMapping("/about")
+    public String about() {
+        return "about";
+    }
+
+    @RequestMapping("/project")
+    public String project() {
+        return "project";
+    }
 }

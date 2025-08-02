@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects</title>
+  <!-- Tailwind CSS for styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* A subtle glow effect on cards on hover */
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0,0,0,0.06);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- Header Section -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold text-slate-900">My Portfolio</div>
+    <div class="hidden md:flex space-x-8">
+      <a href="/" class="text-slate-600 hover:text-indigo-600 transition-colors">Home</a>
+      <a href="/about" class="text-slate-600 hover:text-indigo-600 transition-colors">About</a>
+      <a href="#" class="text-indigo-600 font-semibold border-b-2 border-indigo-600">Projects</a>
+      <a href="/contact" class="text-slate-600 hover:text-indigo-600 transition-colors">Contact</a>
+    </div>
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    </button>
+  </nav>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto px-6 py-12 md:py-20">
+
+  <!-- Projects Section Title -->
+  <section class="text-center mb-12">
+    <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Things I've Built</h1>
+    <p class="text-lg text-slate-600 max-w-2xl mx-auto">Here's a selection of some of my favorite projects. Feel free to explore them.</p>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+
+    <!-- Project Card 1 -->
+    <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
+      <img src="https://placehold.co/600x400/6366f1/ffffff?text=Project+One"
+           onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Error';"
+           alt="A placeholder image for Project One" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-slate-900">E-commerce Platform</h3>
+        <p class="text-slate-600 mb-4">A full-featured online store built with a modern tech stack, focusing on user experience and performance.</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React</span>
+          <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+          <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
+        </div>
+        <div class="flex justify-end space-x-4 mt-6">
+          <a href="#" class="text-slate-600 hover:text-indigo-600 font-medium transition-colors">Source Code</a>
+          <a href="#" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition-colors shadow">View Live</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
+      <img src="https://placehold.co/600x400/ec4899/ffffff?text=Project+Two"
+           onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Error';"
+           alt="A placeholder image for Project Two" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-slate-900">Task Management App</h3>
+        <p class="text-slate-600 mb-4">A productivity app to help users organize tasks, set deadlines, and track progress with an intuitive interface.</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Vue.js</span>
+          <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Firebase</span>
+          <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Tailwind CSS</span>
+        </div>
+        <div class="flex justify-end space-x-4 mt-6">
+          <a href="#" class="text-slate-600 hover:text-pink-600 font-medium transition-colors">Source Code</a>
+          <a href="#" class="bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors shadow">View Live</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 3 -->
+    <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300">
+      <img src="https://placehold.co/600x400/10b981/ffffff?text=Project+Three"
+           onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Error';"
+           alt="A placeholder image for Project Three" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2 text-slate-900">Data Visualization Dashboard</h3>
+        <p class="text-slate-600 mb-4">An interactive dashboard for visualizing complex datasets with charts and graphs, built with D3.js.</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded-full">D3.js</span>
+          <span class="bg-sky-100 text-sky-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+          <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML/CSS</span>
+        </div>
+        <div class="flex justify-end space-x-4 mt-6">
+          <a href="#" class="text-slate-600 hover:text-teal-600 font-medium transition-colors">Source Code</a>
+          <a href="#" class="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition-colors shadow">View Live</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- You can add more project cards here by copying the structure above -->
+
+  </section>
+</main>
+
+<!-- Footer Section -->
+<footer class="bg-white border-t border-slate-200 mt-12">
+  <div class="container mx-auto px-6 py-8 text-center text-slate-600">
+    <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    <div class="flex justify-center space-x-6 mt-4">
+      <a href="#" class="hover:text-indigo-600 transition-colors">GitHub</a>
+      <a href="#" class="hover:text-indigo-600 transition-colors">LinkedIn</a>
+      <a href="#" class="hover:text-indigo-600 transition-colors">Twitter</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
